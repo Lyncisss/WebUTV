@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset"UTF-8" />
+		<title>My Project</title>
+		<link href="normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<style>
+			body {
+					background: #648880;
+					background: linear-gradient(to right, #648880, #f6f1d3 50%, #648880);
+					
+			    }
+			p 	{
+					font-family: 'Oswald', sans-serif;
+				}
+			#main-grid {
+					max-width: 1200px;
+					margin: 0 auto;
+				
+					display: grid;
+					grid-template-columns: 1fr 2fr 2fr;
+					grid-template-rows: 200px auto auto 200px;
+					grid-template-areas: 	"header header header"
+											"navigation introbilde introbilde"
+											"function flex flex"
+											"footer footer footer";
+				}
+			header {
+					grid-area: header;
+					background: skyblue;
+					border-radius: 50px;
+					background: #466368;
+					background: radial-gradient(#536572, #648880);
+				}
+			menu { 
+					font-family: 'Oswald', sans-serif;
+					grid-area: navigation;
+					float: left; /* Обтекание справа */
+					width: 186px; /* Ширина колонки */
+					padding: 5px; /* Поля вокруг текста */
+					margin-left: 10px;
+
+			    }
+			menu a { 
+					display: block; /* Отображать ссылку как блок */
+					padding: 2px; /* Поля вокруг ссылок */
+					margin: 1px 2px 20px; /* Отступы вокруг */
+					font-size: 2em; /* Размер текста */
+					text-decoration: none; /* Убираем подчеркивание текста */
+					text-align: center;
+					border-radius: 50px;
+					background: skyblue;
+					-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+					-moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+					box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+					background: #648880;
+					background: linear-gradient(to right, #648880, #f6f1d3 50%, #648880);
+					color: black;
+
+				}
+			menu a:hover { 
+					background: aqua; /* Цвет фона */
+					-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					transition: All 0.3s ease;
+				}
+			footer {
+					grid-area: footer;
+				}
+			h1, h2, h3 {
+					font-family: 'Oswald', sans-serif;
+				}
+			.flex {
+					grid-area: flex;
+					display: flex;
+					flex-wrap: wrap;
+					width: 100%;
+					max-width: 1200px;
+				}
+			article {
+					border-color: #648880;
+					border-style: solid;
+					border-radius: 50px;
+					padding: 15px;
+					margin: 10px;
+				}
+			article a { 
+					padding: 5px; /* Поля вокруг ссылок */
+					margin: 1px 2px 5px; /* Отступы вокруг */
+					font-size: 1em; /* Размер текста */
+					text-decoration: none; /* Убираем подчеркивание текста */
+					text-align: center;
+					border-radius: 25px;
+					background: skyblue;
+					-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+					-moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+					box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+					background: #648880;
+					background: linear-gradient(to right, #f6f1d3, #648880 75%, #293f50);
+					color: black;
+				}
+			article a:hover { 
+					background: aqua; /* Цвет фона */
+					-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					transition: All 0.3s ease;
+				}
+			#mainbilde {
+					grid-area: introbilde;
+					margin-top: 16px;
+					margin-right: 200px;
+					border-radius: 50px;
+					}
+			function { 
+					grid-area: function;
+					font-family: 'Oswald', sans-serif;
+					width: 180px; /* Ширина колонки */
+					padding: 5px; /* Поля вокруг текста */
+					border-color: #648880;
+					border-style: solid;
+					border-radius: 50px;
+					padding: 10px;
+
+			    }
+			function ul { 
+					display: block; /* Отображать ссылку как блок */
+					padding: 2px;
+					margin: 10px;
+				}
+			footer {
+					grid-area: footer;
+					border-color: #648880;
+					border-style: solid;
+					border-radius: 50px;
+					margin: 10px;
+				}
+			footer p {
+					margin-left: 20px;
+					font-size: 20px;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="main-grid">
+			<header>
+				<img src="logo2.png" id="logo" align="left" hspace="10">
+				<h1 class="title">Vadim Bushmakin sin Hjemmeside</h1>
+				<h2 class="title">Jeg, som en student på HIØ har lagt et nettsted. På denne nettstedet skal jeg skrive en del artikler om de emnene jeg lærer om i faget webutvikling</h2>
+			</header>
+			<menu>
+			   <div><a href="index.html">HJEM</a></div>
+			   <div><a href="2.html">BILDER</a></div>
+			   <div><a href="3.html">LYDER</a></div>
+			   <div><a href="4.html">ANDRE TING</a></div>
+			   <div><a href="text.html">OM OSS</a></div>
+			</menu>
+			<img src="water.jpg" id="mainbilde" width="960" height="300">
+			<function>
+				<h2 align="center">Innleveringsfrister</h3>
+				<ul>
+					<li><p>Webutvikling - 4.10 23:59</p></li>
+					<li><p>Innføring i programmering - 4.10 11:59</p></li>
+					<li><p>GRIT - 2.10 23:59</p></li>
+				</ul>
+			</function>
+			<div class="flex">
+				<article>
+					<h2>Hva er MathML</h2>
+					<p>MathML is a low-level specification for mathematical and scientific content on the Web and beyond.</p>
+					<p><a href="#mer">Les mer</a></p>
+				</article>
+				<article>
+					<h2>Hva er SVG</h2>
+					<p>Det er et oppslagsspråk som er utvidet fra XML for å beskrive todimensjonal vektorgrafikk.</p>
+					<p><a href="#mer">Les mer</a></p>
+				</article>
+				<article>
+					<h2>Hva er GitHub</h2>
+					<p>Git is a distributed peer-peer version control system. GitHub is a web-based Git repository hosting service</p>
+					<p><a href="#mer">Les mer</a></p>
+				</article>
+				<article>
+					<h2>Artikkel 4</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec eleifend leo, quis fringilla mauris. Nullam laoreet non leo id vehicula. Praesent faucibus sed velit eget gravida.</p>
+					<p><a href="#mer">Les mer</a></p>
+				</article>
+				<article>
+					<h2>Artikkel 5</h2>
+					<p>Proin dolor justo, tempus et consectetur non, varius ut dolor. Nam efficitur fermentum viverra. Vestibulum ac ante tortor.</p>
+					<p><a href="#mer">Les mer</a></p>
+				</article>
+				<article>
+					<h2>Artikkel 6</h2>
+					<p>Proin dolor justo, tempus et consectetur non, varius ut dolor. Nam efficitur fermentum viverra. Vestibulum ac ante tortor.</p>
+					<p><a href="#mer">Les mer</a></p>
+				</article>
+				<article>
+					<h2>Artikkel 7</h2>
+					<p>Morbi fermentum blandit augue, ac auctor turpis pharetra ornare. Fusce ultricies suscipit tortor ut sagittis. Quisque est velit, convallis vitae purus vitae, tempor viverra ligula.</p>
+					<p><a href="#mer">Les mer</a></p>
+				</article>
+				<article>
+					<h2>Artikkel 8</h2>
+					<p>Morbi fermentum blandit augue, ac auctor turpis pharetra ornare. Fusce ultricies suscipit tortor ut sagittis. Quisque est velit, convallis vitae purus vitae, tempor viverra ligula.</p>
+					<p><a href="#mer">Les mer</a></p>
+				</article>
+				<article>
+					<h2>Artikkel 9</h2>
+					<p>Morbi fermentum blandit augue, ac auctor turpis pharetra ornare. Fusce ultricies suscipit tortor ut sagittis. Quisque est velit, convallis vitae purus vitae, tempor viverra ligula.</p>
+					<p><a href="#mer">Les mer</a></p>
+				</article>
+			</div>
+			<footer>
+				<ul>
+					<li><p>https://www.w3.org/Math/ - om MathML</p></li>
+					<li><p>https://developer.mozilla.org/en-US/docs/Web/SVG - om SVG.</p></li>
+					<li><p>https://stackoverflow.com/questions/13321556/difference-between-git-and-github - om GitHub and Git</p></li>
+				</ul>
+				<p><a href="#mer">Om oss</a></p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset"UTF-8" />
+		<title>My Project</title>
+		<link href="normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<style>
+			body {
+					background: #648880;
+					background: linear-gradient(to right, #648880, #f6f1d3 50%, #648880);
+					
+			    }
+			p 	{
+					font-family: 'Oswald', sans-serif;
+				}
+			#main-grid {
+					max-width: 1200px;
+					margin: 0 auto;
+				
+					display: grid;
+					grid-template-columns: 1fr 2fr 2fr;
+					grid-template-rows: 200px auto auto 200px;
+					grid-template-areas: 	"header header header"
+											"navigation introbilde introbilde"
+											"function text text"
+											"footer footer footer";
+				}
+			header {
+					grid-area: header;
+					background: skyblue;
+					border-radius: 50px;
+					background: #466368;
+					background: radial-gradient(#536572, #648880);
+				}
+			menu { 
+					font-family: 'Oswald', sans-serif;
+					grid-area: navigation;
+					float: left; /* Обтекание справа */
+					width: 186px; /* Ширина колонки */
+					padding: 5px; /* Поля вокруг текста */
+					margin-left: 10px;
+
+			    }
+			menu a { 
+					display: block; /* Отображать ссылку как блок */
+					padding: 2px; /* Поля вокруг ссылок */
+					margin: 1px 2px 20px; /* Отступы вокруг */
+					font-size: 2em; /* Размер текста */
+					text-decoration: none; /* Убираем подчеркивание текста */
+					text-align: center;
+					border-radius: 50px;
+					background: skyblue;
+					-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+					-moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+					box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+					background: #648880;
+					background: linear-gradient(to right, #648880, #f6f1d3 50%, #648880);
+					color: black;
+
+				}
+			menu a:hover { 
+					background: aqua; /* Цвет фона */
+					-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					transition: All 0.3s ease;
+				}
+			footer {
+					grid-area: footer;
+				}
+			h1, h2, h3 {
+					font-family: 'Oswald', sans-serif;
+				}
+			article {
+					grid-area: text;
+					border-color: #648880;
+					border-style: solid;
+					border-radius: 50px;
+					padding: 20px;
+					margin: 10px;
+				}
+			#mainbilde {
+					grid-area: introbilde;
+					margin-top: 16px;
+					margin-right: 200px;
+					border-radius: 50px;
+					}
+			function { 
+					grid-area: function;
+					font-family: 'Oswald', sans-serif;
+					width: 180px; /* Ширина колонки */
+					padding: 5px; /* Поля вокруг текста */
+					border-color: #648880;
+					border-style: solid;
+					border-radius: 50px;
+					padding: 10px;
+
+			    }
+			function ul { 
+					display: block; /* Отображать ссылку как блок */
+					padding: 2px;
+					margin: 10px;
+				}
+			footer {
+					grid-area: footer;
+					border-color: #648880;
+					border-style: solid;
+					border-radius: 50px;
+					margin: 10px;
+				}
+			footer p {
+					margin-left: 20px;
+					font-size: 20px;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="main-grid">
+			<header>
+				<img src="logo2.png" id="logo" align="left" hspace="10">
+				<h1 class="title">Vadim Bushmakin sin Hjemmeside</h1>
+				<h2 class="title">Jeg, som en student på HIØ har lagt et nettsted. På denne nettstedet skal jeg skrive en del artikler om de emnene jeg lærer om i faget webutvikling</h2>
+			</header>
+			<menu>
+			   <div><a href="index.html">HJEM</a></div>
+			   <div><a href="2.html">BILDER</a></div>
+			   <div><a href="3.html">LYDER</a></div>
+			   <div><a href="4.html">ANDRE TING</a></div>
+			   <div><a href="text.html">OM OSS</a></div>
+			</menu>
+			<img src="water.jpg" id="mainbilde" width="960" height="300">
+			<function>
+				<h2 align="center">Innleveringsfrister</h3>
+				<ul>
+					<li><p>Webutvikling - 4.10 23:59</p></li>
+					<li><p>Innføring i programmering - 4.10 11:59</p></li>
+					<li><p>GRIT - 2.10 23:59</p></li>
+				</ul>
+			</function>
+			<article>
+				<p>Skalerbar vektorgrafik (skalerbar vektorgrafik) - et format for bilder basert på tekst. Hvert SVG-bilde er definert ved hjelp av kodeoppslag som ligner på HTML. SVG-kode kan inkluderes direkte i HTML-dokumentet. Hver nettleser støtter SVG, bortsett fra bare Internet Explorer versjon 8 og eldre. SVG er basert på XML, så vi kan legge merke til at elementer som ikke har en lukkerkode må være selvlukkende.</p>
+				<p>Først vi må lage en svg element.</p>
+				<xmp><svg width="900" height="600"></xmp>
+				
+				<p>Ved hjelp av SVG vi kan tegne forskellig figurene på en fort måte. Den også tilbyr mulighet å skrive en tekst. Her er en kode på alle figurer</p>
+				<xmp>
+				<svg width="900" height="600">
+					<circle cx="450" cy="200" r="100"/>
+					<text x="300" y="100" font-family="sans-serif" font-size="25" fill="red">Easy-peasy</text>
+					<rect x="0" y="0" width="500" height="50"/>
+					<circle cx="450" cy="200" r="20" fill="purple" stroke="green" stroke-width="10"/>
+				</svg>
+				</xmp>
+				<svg width="900" height="600">
+					<circle cx="450" cy="200" r="100"/>
+					<text x="300" y="100" font-family="sans-serif" font-size="25" fill="red">Easy-peasy</text>
+					<rect x="0" y="0" width="500" height="50"/>
+					<circle cx="450" cy="200" r="20" fill="purple" stroke="green" stroke-width="10" opacity="0.9"/>
+				</svg>
+			</article>
+			<footer>
+				<ul>
+					<li><p>http://serganbus.github.io/d3tutorials/svg_primer.html - svg eksempler og forklaring(russisk språk)</p></li>
+				</ul>
+				<p><a href="#mer">Om oss</a></p>
+			</footer>
+		</div>
+	</body>
+</html>

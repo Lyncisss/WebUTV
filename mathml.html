@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset"UTF-8" />
+		<title>My Project</title>
+		<link href="normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<style>
+			body {
+					background: #648880;
+					background: linear-gradient(to right, #648880, #f6f1d3 50%, #648880);
+					
+			    }
+			p 	{
+					font-family: 'Oswald', sans-serif;
+				}
+			#main-grid {
+					max-width: 1200px;
+					margin: 0 auto;
+				
+					display: grid;
+					grid-template-columns: 1fr 2fr 2fr;
+					grid-template-rows: 200px auto auto 200px;
+					grid-template-areas: 	"header header header"
+											"navigation introbilde introbilde"
+											"function text text"
+											"footer footer footer";
+				}
+			header {
+					grid-area: header;
+					background: skyblue;
+					border-radius: 50px;
+					background: #466368;
+					background: radial-gradient(#536572, #648880);
+				}
+			menu { 
+					font-family: 'Oswald', sans-serif;
+					grid-area: navigation;
+					float: left; /* Обтекание справа */
+					width: 186px; /* Ширина колонки */
+					padding: 5px; /* Поля вокруг текста */
+					margin-left: 10px;
+
+			    }
+			menu a { 
+					display: block; /* Отображать ссылку как блок */
+					padding: 2px; /* Поля вокруг ссылок */
+					margin: 1px 2px 20px; /* Отступы вокруг */
+					font-size: 2em; /* Размер текста */
+					text-decoration: none; /* Убираем подчеркивание текста */
+					text-align: center;
+					border-radius: 50px;
+					background: skyblue;
+					-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+					-moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+					box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+					background: #648880;
+					background: linear-gradient(to right, #648880, #f6f1d3 50%, #648880);
+					color: black;
+
+				}
+			menu a:hover { 
+					background: aqua; /* Цвет фона */
+					-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+					transition: All 0.3s ease;
+				}
+			footer {
+					grid-area: footer;
+				}
+			h1, h2, h3 {
+					font-family: 'Oswald', sans-serif;
+				}
+			article {
+					grid-area: text;
+					border-color: #648880;
+					border-style: solid;
+					border-radius: 50px;
+					padding: 20px;
+					margin: 10px;
+				}
+			#mainbilde {
+					grid-area: introbilde;
+					margin-top: 16px;
+					margin-right: 200px;
+					border-radius: 50px;
+					}
+			function { 
+					grid-area: function;
+					font-family: 'Oswald', sans-serif;
+					width: 180px; /* Ширина колонки */
+					padding: 5px; /* Поля вокруг текста */
+					border-color: #648880;
+					border-style: solid;
+					border-radius: 50px;
+					padding: 10px;
+
+			    }
+			function ul { 
+					display: block; /* Отображать ссылку как блок */
+					padding: 2px;
+					margin: 10px;
+				}
+			footer {
+					grid-area: footer;
+					border-color: #648880;
+					border-style: solid;
+					border-radius: 50px;
+					margin: 10px;
+				}
+			footer p {
+					margin-left: 20px;
+					font-size: 20px;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="main-grid">
+			<header>
+				<img src="logo2.png" id="logo" align="left" hspace="10">
+				<h1 class="title">Vadim Bushmakin sin Hjemmeside</h1>
+				<h2 class="title">Jeg, som en student på HIØ har lagt et nettsted. På denne nettstedet skal jeg skrive en del artikler om de emnene jeg lærer om i faget webutvikling</h2>
+			</header>
+			<menu>
+			   <div><a href="index.html">HJEM</a></div>
+			   <div><a href="2.html">BILDER</a></div>
+			   <div><a href="3.html">LYDER</a></div>
+			   <div><a href="4.html">ANDRE TING</a></div>
+			   <div><a href="text.html">OM OSS</a></div>
+			</menu>
+			<img src="water.jpg" id="mainbilde" width="960" height="300">
+			<function>
+				<h2 align="center">Innleveringsfrister</h3>
+				<ul>
+					<li><p>Webutvikling - 4.10 23:59</p></li>
+					<li><p>Innføring i programmering - 4.10 11:59</p></li>
+					<li><p>GRIT - 2.10 23:59</p></li>
+				</ul>
+			</function>
+			<article>
+				<p>MathML er ment å legge til rette for bruk og gjenbruk av matematisk og vitenskapelig innhold på nettet, og for andre applikasjoner som datalgebrasystemer, utskriftstypesetting og talesyntese. MathML kan brukes til å kode både presentasjonen av den matematiske notasjonen for høyverdig visuell visning og matematisk innhold for applikasjoner der semantikken er mer av en nøkkelrolle som vitenskapelig programvare eller stemme syntese.</p>
+				</br></br>
+				<p>Exempel 1 som viser "
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+						  <mrow>
+							<msup><mi>a</mi><mn>2</mn></msup>
+							<mo>+</mo>
+							<msup><mi>b</mi><mn>2</mn></msup>
+							<mo>=</mo>
+							<msup><mi>c</mi><mn>2</mn></msup>
+						  </mrow>
+						</math>":</p>
+				<xmp>
+					<body>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+						  <mrow>
+							<msup><mi>a</mi><mn>2</mn></msup>
+							<mo>+</mo>
+							<msup><mi>b</mi><mn>2</mn></msup>
+							<mo>=</mo>
+							<msup><mi>c</mi><mn>2</mn></msup>
+						  </mrow>
+						</math>
+					</body>
+				</xmp>
+				</br></br>
+				<p>Exempel 2 som viser "
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+					   <mrow>
+						  <mrow>
+							 <msup>
+								<mi>x</mi>
+								<mn>2</mn>
+							 </msup>
+							 <mo>+</mo>
+							 <mrow>
+								<mn>4</mn>
+								<mo>⁢</mo>
+								<mi>x</mi>
+							 </mrow>
+							 <mo>+</mo>
+							 <mn>4</mn>
+						  </mrow>
+							 <mo>=</mo>
+							 <mn>0</mn>
+						</mrow>
+				   </math>":</p>
+				<xmp>
+					<body>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+						   <mrow>
+							  <mrow>
+								 <msup>
+								  <mi>x</mi>
+								  <mn>2</mn>
+								 </msup>
+								 <mo>+</mo>
+								 <mrow>
+								  <mn>4</mn>
+								  <mo>⁢</mo>
+								  <mi>x</mi>
+								 </mrow>
+								 <mo>+</mo>
+								 <mn>4</mn>
+							  </mrow>
+								 <mo>=</mo>
+								 <mn>0</mn>
+							 </mrow>
+					    </math>
+					</body>
+				</xmp>
+				</br></br>
+				<p>Exempel 2 som viser "
+						<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+							<mrow>
+								<mfrac>
+									<mrow>
+										<mi>x</mi><mo>+</mo><mn>1</mn>
+									</mrow>
+									<mrow>
+										<mo>/</mo>
+									</mrow>
+									<mrow>
+										<mn>3</mn><mi>y</mi>
+									</mrow>
+								</mfrac>
+							</mrow>
+						</math>":</p>
+				<xmp>
+					<body>
+						<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+							<mrow>
+								<mfrac>
+									<mrow>
+										<mi>x</mi><mo>+</mo><mn>1</mn>
+									</mrow>
+									<mrow>
+										<mo>/</mo>
+									</mrow>
+									<mrow>
+										<mn>3</mn><mi>y</mi>
+									</mrow>
+								</mfrac>
+							</mrow>
+						</math>
+					</body>
+				</xmp>
+			</article>
+			<footer>
+				<ul>
+					<li><p>https://htmlhook.ru/html5-mathml-teg.html -  1. 2. eksempler</p></li>
+					<li><p>http://accessibility.psu.edu/math/mathml/ - 3. eksempel</p></li>
+				</ul>
+				<p><a href="#mer">Om oss</a></p>
+			</footer>
+		</div>
+	</body>
+</html>
